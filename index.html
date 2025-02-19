@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Pedro</title>
+
+    <!-- Importando a fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Link do javascript-->
+    <link rel="stylesheet" href="index.js">
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Pegando os elementos do HTML
+        var botao = document.getElementById("mostrarMensagem");
+        var mensagem = document.getElementById("mensagemOculta");
+
+        // Adicionando um evento de clique
+        botao.addEventListener("click", function () {
+            mensagem.style.display = "block"; // Torna a mensagem visível
+        });
+    });
+</script>
+</body>
+</html>
+
+<body>
+    <header class="cabecalho">
+        <h1>💖 MENSAGEM PARA VOCÊ 💖</h1>
+    </header>
+
+    <main class="mensagem">
+        <p>
+            Meu amor, cada momento ao seu lado é um presente, e cada dia contigo faz meu coração transbordar de felicidade.
+            Você é a melhor parte dos meus dias, o sorriso que ilumina meu mundo e o abraço que me traz paz.
+            Te amo mais do que palavras podem expressar, e sou grata por ter você ao meu lado. Para sempre, você e eu. ❤️
+        </p>
+    
+        <!-- Botão que mostra a mensagem -->
+        <button id="mostrarMensagem">Clique aqui</button>
+    
+        <!-- Mensagem escondida que aparecerá ao clicar -->
+        <p id="mensagemOculta" style="display: none; font-size: 1.5em; color: white; margin-top: 20px;">❤️ Eu te amo! ❤️</p>
+
+    </main>
+</body>
+</html>
